@@ -32,6 +32,8 @@ for seg in range(0,99):
     vData = getData(fname)
     plot(vData)
   title(str(len(fileset)) + " neurons, segment " + str(seg))
+  ylabel('mV')
+  xlabel('steps')
   savefig('../graphs/allNeurons_seg'+str(seg)+'.png')
   clf()
   
